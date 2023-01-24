@@ -1,13 +1,17 @@
 background(255, 255, 255);
 
-function emoji (x, y, s) {
+fill(243, 210, 155);
+noStroke();
 
+beginShape();
+vertex(100, 200);
+bezierVertex(100, 100, 300, 100, 300, 200);
+bezierVertex(230, 300, 170, 300, 100, 200);
+endShape();
 
-fill(255, 200, 30);
-ellipse(x, y, 200 * s);
-}
+push();
+translate(115, 135);
+rotate(0.15);
+arc(0, 0, 60, 70, 0, PI, PIE);
+pop();
 
-let x = 150;
-function draw() {
-    emoji(x, 200, 1.0);
-}
