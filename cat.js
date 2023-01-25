@@ -63,22 +63,28 @@ head(105, 135);
 push();
 translate(160, 200);
 rotate(0.1);
-eye(-5, 0);
+eye(-5, 5);
 pop();
 
 push();
 translate(220, 200);
 scale(-1, 1);
 rotate(0.1);
-eye(-5, 0);
+eye(-5, 5);
 pop();
 
 
 //Nose
 push();
-translate(190, 200);
-fill(249, 167, 212);
+translate(190, 210);
 
+fill(241, 227, 213);
+beginShape();
+vertex(-10, 25);
+bezierVertex(-10, -5, 10, -5, 10, 25);
+endShape();
+
+fill(249, 167, 212);
 beginShape();
 vertex(-10, 25);
 bezierVertex(-10, 20, 10, 20, 10, 25);
@@ -87,5 +93,10 @@ endShape();
 triangle(0, 35, -10, 25, 10, 25);
 stroke(249, 167, 212, 180);
 line(0, 35, 0, 45);
+line(0, 45, 10, 50);
+line(0, 45, -10, 50);
+
+
+
 
 pop();
