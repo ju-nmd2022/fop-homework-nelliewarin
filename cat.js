@@ -51,7 +51,6 @@ bezierVertex(xEye + 12, yEye - 10, xEye + 5, yEye - 10, xEye - 25, yEye - 7);
 endShape();
 }
 
-
 //Calling the functions
 ear(105, 135);
 push();
@@ -64,12 +63,29 @@ head(105, 135);
 push();
 translate(160, 200);
 rotate(0.1);
-eye(0, 0);
+eye(-5, 0);
 pop();
 
 push();
 translate(220, 200);
 scale(-1, 1);
 rotate(0.1);
-eye(0, 0);
+eye(-5, 0);
+pop();
+
+
+//Nose
+push();
+translate(190, 200);
+fill(249, 167, 212);
+
+beginShape();
+vertex(-10, 25);
+bezierVertex(-10, 20, 10, 20, 10, 25);
+endShape();
+
+triangle(0, 35, -10, 25, 10, 25);
+stroke(249, 167, 212, 180);
+line(0, 35, 0, 45);
+
 pop();
