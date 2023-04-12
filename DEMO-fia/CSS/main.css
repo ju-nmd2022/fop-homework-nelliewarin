@@ -1,0 +1,47 @@
+* {
+  font-family: "Franklin Gothic", "Arial Narrow", Arial, sans-serif;
+}
+
+.profile-image {
+  width: 300px;
+  margin: 10px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: rgb(54, 122, 179);
+}
+
+h1 {
+  font-size: 40px;
+}
+
+.intro {
+  width: 50%;
+  float: left;
+}
+
+.second {
+  width: 50%;
+  float: right;
+}
+
+li:hover {
+  font-weight: bold;
+}
+
+.input-field {
+  font-size: medium;
+  border: 1px solid black;
+  padding: 8px;
+  margin: 5px;
+  margin-bottom: 15px;
+}
+
+.input-field:focus {
+  border: 3px;
+}

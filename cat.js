@@ -30,25 +30,30 @@ function head(x, y) {
 }
 
 //Eyes
-function eye(xEye, yEye) { 
+function eye(xEye, yEye) {
+  fill(255, 255, 255);
+  ellipse(xEye, yEye, 30);
 
-fill(255, 255, 255);
-ellipse(xEye, yEye, 30);
+  fill(217, 113, 49);
+  ellipse(xEye, yEye, 25);
 
-fill(217, 113, 49);
-ellipse(xEye, yEye, 25);
+  fill(0, 0, 0);
+  ellipse(xEye, yEye, 10, 20);
 
-fill(0, 0, 0);
-ellipse(xEye, yEye, 10, 20);
+  beginShape();
+  fill(218, 196, 181);
 
-
-beginShape();
-fill(218, 196, 181);
-
-vertex(xEye - 25, yEye - 7);
-bezierVertex(xEye - 10, yEye - 20, xEye + 15, yEye - 30, xEye + 20, yEye + 10);
-bezierVertex(xEye + 12, yEye - 10, xEye + 5, yEye - 10, xEye - 25, yEye - 7);
-endShape();
+  vertex(xEye - 25, yEye - 7);
+  bezierVertex(
+    xEye - 10,
+    yEye - 20,
+    xEye + 15,
+    yEye - 30,
+    xEye + 20,
+    yEye + 10
+  );
+  bezierVertex(xEye + 12, yEye - 10, xEye + 5, yEye - 10, xEye - 25, yEye - 7);
+  endShape();
 }
 
 //Calling the functions
@@ -73,7 +78,6 @@ rotate(0.1);
 eye(-5, 5);
 pop();
 
-
 //Nose
 push();
 translate(190, 210);
@@ -95,8 +99,5 @@ stroke(249, 167, 212, 180);
 line(0, 35, 0, 45);
 line(0, 45, 10, 50);
 line(0, 45, -10, 50);
-
-
-
 
 pop();
